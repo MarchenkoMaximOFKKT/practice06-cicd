@@ -9,7 +9,7 @@ describe('slugify', () => {
     expect(slugify('  --Hi!--  ')).toBe('hi');
   });
   it('повертає порожній рядок для порожнього вводу', () => {
-    expect(slugify('')).toBe('УМИСНА ПОМИЛКА');
+    expect(slugify('')).toBe('');
   });
   it('прибирає дефіси на краях', () => {
     expect(slugify('--hello--')).toBe('hello');
