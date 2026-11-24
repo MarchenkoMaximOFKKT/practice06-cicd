@@ -11,4 +11,7 @@ describe('slugify', () => {
   it('повертає порожній рядок для порожнього вводу', () => {
     expect(slugify('')).toBe('');
   });
+  it('прибирає дефіси на краях', () => {
+    expect(slugify('--hello--')).toBe('hello');
+  });
 });
