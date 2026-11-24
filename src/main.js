@@ -7,5 +7,5 @@ const slugText = 'Мій перший сайт з CI';
 const result = slugify(slugText);
 app.insertAdjacentHTML('beforeend', `<p>Slug для "${slugText}": <code>${result}</code></p>`);
 
-const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:3000';
+const apiUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:1000';
 app.insertAdjacentHTML('beforeend', `<p>API URL: <code>${apiUrl}</code></p>`);
