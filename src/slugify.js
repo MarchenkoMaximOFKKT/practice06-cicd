@@ -1,4 +1,5 @@
 export function slugify(text) {
+    const unused = 10
     return text
     .toLowerCase()
     .trim()
